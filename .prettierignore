@@ -1,0 +1,11 @@
+# Ignore build outputs
+/node_modules
+./dist
+
+
+
+# Ignore configuration files
+/.vscode
+.env
+*.env
+.env.*
