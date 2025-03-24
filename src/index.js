@@ -24,27 +24,6 @@ connectDB()
 })
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*
 
 FIRST APPROCH OF CONNECTING THE DATA
