@@ -19,17 +19,17 @@ const UserSchema = mongoose.Schema(
             lowercase:true,
             trim:true,
         },
-        fullname:{
+        fullName:{
             type:String,
             required:true,
             trim:true,
             index:true
         },
-        avtar:{
+        avatar:{
             type:String, // cloudnary url
             required:true
         },
-        coverimage:{
+        coverImage:{
             type:String,
             required:true
         },
@@ -79,7 +79,6 @@ UserSchema.methods.generateAccessToken = async function (){
 UserSchema.methods.generateRefreshToken = async function (){
     jwt.sign(
         {
-            _id:this._id,
             email:this.email,
             username:this.username,
             fullname:this.fullname
